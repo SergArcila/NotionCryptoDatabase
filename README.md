@@ -1,6 +1,6 @@
 # Notion Crypto Portfolio Tracker
 
-This repository contains a Python script that **automatically fetches live crypto prices from CoinMarketCap** and updates a **Notion database** with those prices (and optionally calculates a holding value). It’s especially useful for anyone who wants to track their cryptocurrency holdings directly in Notion without manually updating prices.
+This repository contains a Python script that **automatically fetches live crypto prices from CoinMarketCap** and updates a **Notion database** with those prices (and optionally calculates a holding value). It’s especially useful for anyone who wants to track their cryptocurrency holdings directly in Notion without manually updating prices. If you are anything like me, you have 100 different coins accross a million different locations so here you can take note where all your coins are stored as well. 
 
 ## Features
 
@@ -24,6 +24,7 @@ This repository contains a Python script that **automatically fetches live crypt
    - **Amount** (number property, how many tokens you hold)
    - **Price** (number property, updated by the script)
    - **Current Holding Value** (a formula or number property if you want the script to calculate total value)
+   - **Location of Asset** (Where your coins are for easy tracking)
 
 2. The **Python script**:
    - Uses your **Notion Integration Token** to access the Notion API.
@@ -36,7 +37,5 @@ This repository contains a Python script that **automatically fetches live crypt
 
 ### 1. Clone or Fork the Repository
 
-```bash
-git clone https://github.com/<your-username>/<this-repo>.git
-cd <this-repo>
+You got this. Ask chat.
 
