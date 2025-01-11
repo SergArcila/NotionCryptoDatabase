@@ -1,0 +1,32 @@
+name: Update Notion Crypto Prices
+
+on:
+  schedule:
+    - cron: '0 8 * * *'  # runs every day at 8:00 UTC
+  workflow_dispatch:      # allows manual triggering in the Actions tab
+
+jobs:
+  update-prices:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install requests python-dotenv
+
+      - name: Run script
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          CMC_API_KEY: ${{ secrets.CMC_API_KEY }}
+        run: |
+          python update_prices.py
+
