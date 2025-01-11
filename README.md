@@ -2,6 +2,13 @@
 
 This repository contains a Python script that **automatically fetches live crypto prices from CoinMarketCap** and updates a **Notion database** with those prices (and optionally calculates a holding value). It’s especially useful for anyone who wants to track their cryptocurrency holdings directly in Notion without manually updating prices. If you are anything like me, you have 100 different coins accross a million different locations so here you can take note where all your coins are stored as well. 
 
+## PREREQS
+
+You need a notion database. You need to get a few important pieces of information. You need NOTION_TOKEN, NOTION_DATABASE_ID and CMC_API_KEY. If you have questions text me 786-203-9240. Here is my notion template so duplicate it and fill it out with your coin and the correct information.
+https://dull-eyelash-ccc.notion.site/178ef5bb9f7280168674eb67216bd317?v=f8de439eabdf4e1b9f2762a0ecab12f8&pvs=4
+
+PS. now you know what coins I actively have haha.
+
 ## Features
 
 - **Automated Price Updates**  
